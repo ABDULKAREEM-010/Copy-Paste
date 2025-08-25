@@ -1,0 +1,25 @@
+Privacy Policy — Copy&Paste
+Last updated: 25/08/2025
+
+1. Overview
+Copy&Paste is a browser extension created by Abdul Kareem that allows users to store text locally and paste it into web pages (including pages that block paste). This privacy notice explains what data the extension uses and how it is handled.
+
+2. Data collected
+- Panel buffer text (user-provided): Stored locally in the browser extension storage so users can paste content later. Purpose: to enable paste functionality.
+- Clipboard usage: The extension writes to the system clipboard only when the user clicks “Copy & Set Buffer” (explicit action). The extension does not read or transmit clipboard contents automatically.
+- No telemetry: Copy&Paste does not collect analytics, usage telemetry, or crash reports.
+
+3. Data sharing
+- Copy&Paste does not transmit user buffer contents to any external servers and does not share the buffer with third parties.
+
+4. Where data is stored
+- Data is stored in the browser extension’s storage on the local device. If the extension uses `chrome.storage.sync`, the buffer will sync across devices on the user’s Chrome account. If you prefer non-sync behavior, the extension can be configured to use `chrome.storage.local`.
+
+5. Retention & deletion
+- The buffer persists until the user clears it in the popup UI or uninstalls the extension.
+
+6. Security
+- The extension is client-only; no remote code is executed and no external storage is used by default.
+
+7. Contact
+For questions or concerns contact: kareemmohammedabdul616@gmail.com
