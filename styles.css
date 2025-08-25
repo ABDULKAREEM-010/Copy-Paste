@@ -1,0 +1,241 @@
+/* body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b0c10;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+.container {
+  padding: 14px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 10px 0;
+}
+
+#panelText {
+  width: 100%;
+  height: 160px;
+  resize: vertical;
+  padding: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  outline: none;
+  background: #111217;
+  color: #e5e7eb;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+.btn-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.action-btn, .secondary-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .05s ease, opacity .15s ease, background .2s ease;
+}
+
+.action-btn {
+  background: #3b82f6;
+  color: white;
+}
+.action-btn:hover { background: #2563eb; }
+.action-btn:active { transform: translateY(1px); }
+
+.secondary-btn {
+  background: #1f2937;
+  color: #e5e7eb;
+}
+.secondary-btn:hover { background: #374151; }
+.secondary-btn:active { transform: translateY(1px); }
+
+.hint {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.status {
+  font-size: 12px;
+  color: #a7f3d0;
+  margin-top: 6px;
+  opacity: 0.75;
+}
+
+/* Make code-looking placeholders readable */
+::placeholder { color: #6b7280; }
+
+/* Footer credit 
+.footer {
+  margin-top: 14px;
+  font-size: 11px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.footer a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #60a5fa;
+} */
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #eaeaea;
+  padding: 20px;
+  width: 340px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  resize: none;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.3);
+}
+
+textarea::placeholder {
+  color: #bbb;
+}
+
+/* Buttons Row */
+.btn-row {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Primary Button */
+.action-btn {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.3);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 6px 14px rgba(79, 172, 254, 0.5); */
+}
+
+/* Secondary Button */
+.secondary-btn {
+  background: linear-gradient(45deg, #43e97b, #38f9d7);
+  color: #fff;
+  /* box-shadow: 0 4px 10px rgba(67, 233, 123, 0.3); */
+}
+
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 6px 14px rgba(67, 233, 123, 0.5); */
+}
+
+/* Tip */
+.hint {
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* Status */
+.status {
+  font-size: 12px;
+  color: #00f2fe;
+  text-align: center;
+  margin-top: -4px;
+  min-height: 14px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer a {
+  color: #00c6ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
