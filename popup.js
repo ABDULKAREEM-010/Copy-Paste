@@ -45,9 +45,3 @@ document.getElementById("pasteNowBtn").addEventListener("click", async () => {
     setStatus("⚠️ No active tab");
   }
 });
-
-// Auto-clear buffer when popup closes
-window.addEventListener("unload", () => {
-  panel.value = "";
-  chrome.storage.sync.set({ panelText: "" });
-});

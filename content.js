@@ -1,7 +1,12 @@
 // content.js (deep fix)
 (() => {
-  // Only relax site anti-user JS. Do NOT touch typing or paste.
-  const blockTypes = ["copy","cut","contextmenu","selectstart","dragstart"];
+  // Prevent duplicate initialization
+  if (window.__COPYPASTE_PLUS_LOADED) return;
+  window.__COPYPASTE_PLUS_LOADED = true;
+
+  // Allow user copy/cut but block site handlers that prevent selection/context menu
+  // We DON'T block copy/cut events - those should work normally for the user
+  const blockTypes = ["contextmenu","selectstart","dragstart"];
   const stopper = (e) => { e.stopPropagation(); };
   blockTypes.forEach((t) => {
     window.addEventListener(t, stopper, true);
@@ -65,8 +70,8 @@
         return;
       }
 
-      // Fallback: find an editable target
-      const editable = document.querySelector('textarea, input[type="text"], [contenteditable="true"]');
+      // Fallback: find an editable target (broader selector)
+      const editable = document.querySelector('textarea, input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]), [contenteditable="true"]');
       if (editable) {
         editable.focus();
         if (editable.tagName && ["input","textarea"].includes(editable.tagName.toLowerCase())) {
