@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy&Paste (Exact Format)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Keep exact formatting. Store text in a panel and paste into sites without Changing the format.",
   "permissions": [
     "storage",
