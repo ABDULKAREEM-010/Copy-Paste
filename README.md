@@ -15,7 +15,7 @@ CopyPaste+ is a lightweight Chrome extension that lets you paste **exact text/co
 3. Click **Load unpacked** → select the extracted folder.
 
 ## 🌐 Chrome Web Store (once published)
-[Install from Chrome Web Store](https://chromewebstore.google.com/detail/pagnbhhldloillnhfohghnielmnianlh?utm_source=item-share-cb))
+[Install from Chrome Web Store](https://chromewebstore.google.com/detail/pagnbhhldloillnhfohghnielmnianlh?utm_source=item-share-cb)
 ## 🧠 How it works
 - A popup panel stores your exact text in extension storage.
 - A content script intercepts site blockers and injects your stored text into inputs/textareas/contenteditable when you trigger paste.
